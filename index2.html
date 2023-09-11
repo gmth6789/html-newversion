@@ -495,40 +495,7 @@
 			</div>
 		</div>
 	</body>
-	<script type="module">
-		const app = Vue.createApp({
-			data() {
-				return {
-					globalData: { test: '1' },
-					search1: ''
-				};
-			},
-			created() {
-				this.init();
-			},
-			methods: {
-				async init() {},
-				scrolltoupperFlex5(evt) {},
-				scrolltolowerFlex5(evt) {}
-			}
-		});
-		app.use(vant);
-		app.use(DiygwLib);
-		app.config.globalProperties.$tools = new Tools();
-		app.config.globalProperties.$http = httpService;
-		app.config.globalProperties.$session = Session;
-		app.mixin({
-			methods: {
-				Validate,
-				setData,
-				navigateTo,
-				showModal,
-				showToast,
-				uploadImage
-			}
-		});
-		app.mount('#app');
-	</script>
+
 	<style>
 		.flex-clz {
 			margin-left: 10px;
